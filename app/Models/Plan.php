@@ -9,4 +9,14 @@ class Plan extends Model
 {
     use HasFactory;
     protected $fillable = ['name','url','price', 'description'];
+
+    public function search($filter = null){
+
+        $result = $this
+                    ->where('name', 'LIKE', "%{$filter}%")
+                    ->orWhere('description', 'LIKE', "%{$filter}%")
+                    ->simplePaginate();
+        return $result;
+
+    }
 }

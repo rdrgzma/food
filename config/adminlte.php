@@ -46,8 +46,8 @@ return [
     */
 
     'logo' => '<b>Delivery</b>FOOD',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
-    'logo_img_class' => 'brand-image img-circle elevation-3',
+    'logo_img' => 'vendor/adminlte/dist/img/logo_size_invert.jpg',
+    'logo_img_class' => 'brand-image elevation-3     ',// img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
     'logo_img_alt' => 'DeliveryFOOD',
@@ -187,7 +187,7 @@ return [
     */
 
     'use_route_url' => false,
-    'dashboard_url' => 'home',
+    'dashboard_url' => 'admin',
     'logout_url' => 'logout',
     'login_url' => 'login',
     'register_url' => 'register',
@@ -232,6 +232,7 @@ return [
         [
             'text' => 'Planos',
             'url'  => 'admin/plans',
+            'icon' => 'fas fa-clipboard-list'
             //'can'  => 'manage-blog',
         ],
         // [
